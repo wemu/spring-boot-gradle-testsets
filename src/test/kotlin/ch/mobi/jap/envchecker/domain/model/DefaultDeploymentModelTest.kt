@@ -74,9 +74,6 @@ class DefaultDeploymentModelTest {
             deployments.add(Deployment(env, service, listOf()))
         }
 
-        // TODO use KotlinTestRunner?
-        // everything is final in Kotlin, so mocking with mockito is different. for now class is open and method is open
-        // Kotlin POWAAAA: https://medium.com/@dpreussler/never-say-final-mocking-kotlin-classes-in-unit-tests-314d275b82b1
         val builder = mock<DeploymentModelBuilder> {
             on { model() } doReturn deployments
         }
