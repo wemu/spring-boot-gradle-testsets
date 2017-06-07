@@ -5,6 +5,7 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
+		jcenter()
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -18,6 +19,10 @@ apply plugin: 'kotlin'
 apply plugin: 'kotlin-spring'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'org.unbroken-dome.test-sets'
+
+repositories {
+	mavenCentral()
+}
 
 testSets {
 	integrationTest
