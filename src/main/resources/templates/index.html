@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--/*@thymesVar id="envcheckerVersion" type="java.lang.String"*/-->
+<!--/*@thymesVar id="bootVersion" type="java.lang.String"*/-->
+<!--/*@thymesVar id="activeProfiles" type="java.lang.String"*/-->
+<!-- lines above is to workaround: https://youtrack.jetbrains.com/issue/IDEA-132738 -->
+
+<head>
+    <title th:text="'Envchecker - Welcome'"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="../static/css/styles.css" th:href="@{css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+
+<h1>Envchecker!</h1>
+
+<p>Yo!</p>
+
+<footer>
+    <span>Envchecker Version: <b th:text="${envcheckerVersion}" /></span>
+    //<span>Spring Boot Version: <b th:text="${bootVersion}" /></span>
+    //<span>Active Profiles: <i th:text="${activeProfiles}" /></span>
+</footer>
+</body>
+</html>

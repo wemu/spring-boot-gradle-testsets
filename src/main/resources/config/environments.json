@@ -1,0 +1,42 @@
+[
+  {
+    "environment": "Y",
+    "label": "CI",
+    "pipeline": "conventional"
+  },
+  {
+    "environment": "W",
+    "label": "Entw. 17.10",
+    "pipeline": "conventional"
+  },
+  {
+    "environment": "V",
+    "label": "Test 17.10",
+    "pipeline": "conventional"
+  },
+  {
+    "environment": "B",
+    "label": "Test 17.04",
+    "pipeline": "agile"
+  },
+  {
+    "environment": "Z",
+    "label": "Lasttest 17.10",
+    "pipeline": "conventional"
+  },
+  {
+    "environment": "I",
+    "label": "Integration 17.10",
+    "pipeline": "conventional"
+  },
+  {
+    "environment": "T",
+    "label": "PreProd 17.04",
+    "pipeline": "agile"
+  },
+  {
+    "environment": "P",
+    "label": "Produktion",
+    "pipeline": "agile"
+  }
+]
